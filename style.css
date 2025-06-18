@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins';
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    font-family: 'poppins';
+    font-size: 100%;
+
+}
+
+.logo {
+    font-size: 100%;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-left: 1cm;
+   
+}
+
+nav a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    position: sticky;
+
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(4, 82, 11, 0.514)), url(images/nav-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    font-family: 'poppins';
+    position: sticky;
+}
+
+.hero-text p {
+    font-size: 200%;
+    margin-left: 12cm;
+    margin-top: 1cm;
+    color: white;
+
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-left: 18cm;
+    margin-top: -2cm;
+    color: green;
+
+}
+
+#logoo {
+    width: 3%;
+    margin-top: -1.4cm;
+    position: absolute;
+
+}
+#about {
+    width: 75%;
+}
+
+#learn-button {
+    margin-left: 20cm;
+    margin-top: 1cm;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 4cm;
+    border-radius: 5px;
+    font-size: 100%;
+    cursor: pointer;
+
+}
+
+#learn-button:hover {
+    background-color: orange;
+    color: black;
+}
