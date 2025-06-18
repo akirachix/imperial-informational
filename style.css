@@ -254,3 +254,103 @@ h5 {
     font-size: 150%;
     margin-bottom: 1cm;
 }
+
+.footerlog ul li {
+    list-style-type: none;
+
+}
+
+.message-icon a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footerlog {
+    display: flex;
+    margin-top: 2cm;
+    text-decoration: none;
+    gap: 3cm;
+}
+
+.message-phonecall {
+    display: flex;
+    gap: 2cm;
+
+}
+
+.footer-details {
+    border: solid;
+    background-color: #4CAF50;
+    margin-top: 3cm;
+    padding: 30px;
+    font-family: 'poppins';
+}
+
+#logo {
+    width: 10%;
+    margin-left: 3cm;
+    border-radius: 15px;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 120%;
+}
+
+.summary {
+    font-size: 110%;
+    color: white;
+    margin-left: 3cm;
+}
+
+.about-us {
+    color: white;
+}
+.about-us a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.social-media {
+    color: white;
+}
+.social-media a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-icons {
+    color: white;
+    gap: 2cm;
+}
+
+#copyright {
+    color: white;
+    margin-top: 1cm;
+    font-size: 80%;
+}
+
+.icons {
+    display: flex;
+    gap: 2cm;
+    width: 18%;
+    font-size: 130%;
+
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-logo {
+    width: 3%;
+    position: absolute;
+}
+
+.footer-logo-details p {
+    color: white;
+    font-family: 'poppins';
+    margin-bottom: 2px;
+}
