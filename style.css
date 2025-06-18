@@ -354,3 +354,85 @@ h5 {
     font-family: 'poppins';
     margin-bottom: 2px;
 }
+
+
+
+
+@media all and (max-width:750px) {
+    .header {}
+
+    .hero-text {
+        margin-left: -13cm;
+    }
+
+    #logoo {
+        margin-top: -1cm;
+    }
+
+    .hero {
+        background-image: url(images/nav-image.jpg);
+        height: 85vh;
+        width: 100vw;
+    }
+
+    body {
+        margin: 0%;
+    }
+
+    .service-card {
+        width: 80%;
+
+    }
+
+    .services {
+        gap: 2cm;
+    }
+
+    #about {
+        width: 100%;
+        margin-left: 2cm;
+    }
+
+    .target {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: #e0e0e0;
+        text-align: center;
+    }
+
+    .target-card {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 50%;
+    }
+
+    .target {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: #e0e0e0;
+        gap: 2cm;
+    }
+
+    .footerlog {
+        display: flex;
+        margin-top: 2cm;
+        text-decoration: none;
+        gap: 1cm;
+    }
+
+    .icons {
+        gap: 0.5cm;
+    }
+
+    .footer-details {
+        border: solid;
+        background-color: #4CAF50;
+        margin-top: 3cm;
+        padding: 10px;
+        width: 100%;
+    }
+}
