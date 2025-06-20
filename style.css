@@ -52,6 +52,7 @@ form {
       margin-bottom: 8px;
       font-size: 24px;
       font-weight: 600;
+      font-family: 'poppings';
     }
 
     form input,
@@ -62,6 +63,7 @@ form {
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 24px;
+      font-family: 'popping';
       resize: vertical;
     }
 
@@ -71,6 +73,7 @@ form {
       border: none;
       padding: 15px 30px;
       font-size: 24px;
+      font-family: 'popping';
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s ease;
