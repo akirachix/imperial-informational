@@ -209,14 +209,20 @@ hr {
 
     .footer-logo-details {
         margin-top: 10px;
+        font-size: 16px;
     }
 
     .footer-section h3 {
-        font-size: 1.1em;
+        font-size: 18px;
+    }
+
+    .footer-section ul{
+        font-size: 16px;
+      
     }
 
     .footer-socials a {
-        font-size: 1.2em;
+        font-size: 1.8em;
         margin-right: 15px;
     }
 
@@ -227,8 +233,9 @@ hr {
     }
 
     .footer_section {
-        margin-left: -9%;
+        margin-left: 1%;
         margin-top: -1%;
+        font-size: 16px;
 
         text-align: start;
 
