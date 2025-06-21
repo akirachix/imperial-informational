@@ -162,10 +162,10 @@ hr {
         font-size: 16px;
     }
     .footer-section h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .footer-section ul{
-        font-size: 16px;
+        font-size: 14px;
     }
     .footer-socials a {
         font-size: 1.8em;
@@ -176,9 +176,9 @@ hr {
         width: 100%;
     }
     .footer_section {
-        margin-left: 1%;
+        margin-left: -25%;
         margin-top: -1%;
-        font-size: 16px;
+        font-size: 14px;
         text-align: start;
     }
 }
@@ -328,7 +328,7 @@ form {
     }
 
 
-@media all and (max-width:320px) {
+@media all and (max-width:344px) {
     body {
         margin: 0%;
         /* overflow-x: hidden; */
@@ -347,7 +347,7 @@ form {
     
 }
 
-@media (min-width:321px) and (max-width:740px) {
+@media (min-width:345px) and (max-width:740px) {
      body {
         margin: 0%;
         /* overflow-x: hidden; */
@@ -356,7 +356,7 @@ form {
         display: block;
     }
      #contactimg{
-        width: 18em;
+        width:18.8em;
         height: 14em;
         margin-left: 10vw;
     }
@@ -386,9 +386,9 @@ form {
         display: block;
     }
     #contactimg{
-        width: 35em;
-        height: 20em;
-        margin-left: 32vw;
+        width: 53em;
+        height: 30em;
+        margin-left: 16vw;
     }
     form input,
     form textarea{
@@ -425,7 +425,7 @@ form {
          
     }
     #contact_title{
-        font-size: 200%;
+        font-size: 280%;
     }
     form button{
         font-size: 23px;
