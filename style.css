@@ -6,13 +6,8 @@
 
 body {
     font-family: 'poppins';
-    color: #fff;
+    color: #333;
 }
-
-
-
-
-
 
 footer {
     background: #0F5736;
@@ -350,7 +345,7 @@ hr {
 
 /* Contact Us */
 
-h2 {
+#contact_title{
     text-align: center;
     margin-top: 40px;
     font-family: 'poppins';
@@ -421,7 +416,7 @@ form {
 @media all and (max-width:320px) {
     body {
         margin: 0%;
-        overflow: hidden;
+        /* overflow-x: hidden; */
     }
     .contact_info{
         display: block;
@@ -431,7 +426,7 @@ form {
         height: 12em;
         margin-left: 1.9em;
     }
-    h2{
+    #contact_title{
         font-size: 200%;
     }
     
@@ -440,7 +435,7 @@ form {
 @media (min-width:321px) and (max-width:740px) {
      body {
         margin: 0%;
-        overflow: hidden;
+        /* overflow-x: hidden; */
     }
      .contact_info{
         display: block;
@@ -450,7 +445,7 @@ form {
         height: 14em;
         margin-left: 10vw;
     }
-    h2{
+    #contact_title{
         font-size: 200%;
     }
     form input,
@@ -470,7 +465,7 @@ form {
 @media (min-width:768px) and (max-width:1023px) {
      body {
         margin: 0%;
-        overflow: hidden;
+        /* overflow-x: hidden; */
     }
     .contact_info{
         display: block;
@@ -478,7 +473,7 @@ form {
     #contactimg{
         width: 35em;
         height: 20em;
-        margin-left: 15vw;
+        margin-left: 32vw;
     }
     form input,
     form textarea{
@@ -498,7 +493,7 @@ form {
 @media (min-width:1024px) and (max-width:1280px){
       body {
         margin: 0%;
-        overflow: hidden;
+        /* overflow-x: hidden; */
     }
     #contactimg{
         height: 390px;
@@ -514,7 +509,7 @@ form {
          font-size: 23px;
          
     }
-    h2{
+    #contact_title{
         font-size: 200%;
     }
     form button{
