@@ -6,7 +6,7 @@
 
 body {
     font-family: 'poppins';
-    color: #fff;
+
 }
 
 h2{
@@ -29,24 +29,27 @@ h2{
     padding: 20px;
     background-color: #0f5736;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
 }
 
 .target-card h3 {
-    font-size: 120%;
-    color: #eceeec;
+    font-size: 2em;
+    color: orange;
     margin-top: 2cm;
     
 }
 
 .target-card p {
-    font-size: 16px;
-   
+    font-size: 1.2em;
+   padding-top: 8%;
+    color: white;
 }
 
 #card {
-    width: 30%;
+    width: 20%;
+    border-radius: 40%;
+    margin-top: 4%;
 }
 
 
@@ -58,27 +61,22 @@ h2{
     padding-bottom: 3em;
 }
 
-h4 {
-    margin-top: 2cm;
-    color: #4CAF50;
-    text-align: center;
-    font-size: 150%;
+#screen{
+    width: 15%;
+    rotate: -30deg;
 }
 
-#screen {
-    width: 10%;
-    
-}
+
 .screens{
-    margin-top: -1%;
+    margin-top: 2%;
+    margin-left: 9%;
+   
 }
 
-h5 {
-    color: #4CAF50;
-    text-align: center;
-    font-size: 150%;
-    margin-bottom: 1cm;
-}
+
+
+
+
 
 
 
@@ -108,14 +106,24 @@ h5 {
        
     }
     .screens{
-        flex-direction: column;
+        display: block;
+        gap: 20%;
         margin-top: -20%;
-        margin-left: -15%;
-        align-items: center;
+        margin-left: 0;
+
     }
     #screen{
-        width: 20%;
+        width: 60%;
+        rotate: 0deg;
+    
     }
+    .target-card p {
+    font-size: 0.8em;
+
+}
+.target-card h3 {
+    font-size: 1em;
+}
 
 }
 
@@ -143,16 +151,25 @@ h5 {
        
     }
     .screens{
-        flex-direction: column;
-        margin-left: -8%;
+        display: flex;
+       gap: 10%;
+       margin-left: -7%;
 
     }
     #screen{
-        width: 10%;
+        width: 15%;
+        
+    }
+    .target-card p {
+    font-size: 1em;
+   
+}
+.target-card h3 {
+        font-size: 1.5em;
     }
 
 }
-@media only screen and (min-width:1000px){
+/* @media only screen and (min-width:1000px){
  
       body {
         margin: 0%;
@@ -176,17 +193,142 @@ h5 {
        
     }
     .screens{
-        flex-direction: column;
-        align-items: center;
+       display: flex;
+       gap: 10%;
+        width: 90%;
         margin-left: 3%;
+     
+
+    }
+    .target-card h3 {
+        font-size: 1.5em;
+    }
+
+} */
+@media only screen and (width:540px){
+     body{
+        overflow-x: hidden;
+    }
+.screens{
+        margin-left: -8%;
+        /* align-items: center; */
+       margin-top: -3%;
 
     }
     #screen{
-        width: 4%;
+        width: 30%;
+    }
+   
+}
+@media only screen and (width:912px){
+.screens{
+       display: flex;
+       gap: 10%;
+        width: 90%;
+        margin-left: -6%;
+   
+
+    }
+    #screen{
+        width: 19%;
+    }
+}
+
+@media only screen and (width:1280px){
+.target-card p {
+    font-size: 0.7em;
+}
+
+
+
+body {
+        margin: 0%;
+        width: 100%;
+        height: 100vh;
+    }
+    h2{
+        font-size: 3em;
+    }
+
+    .target-card {
+        background-color: #0f5736;;
+        width: 30%;
+       
+    }
+
+    .target {
+       flex-direction: row;
+       gap: 1cm;
+       align-items: center;
+       
+    }
+    .screens{
+       display: flex;
+       gap: 10%;
+        width: 90%;
+        margin-left: 8%;
+        margin-top: -2%;
+
+    }
+    .target-card h3 {
+        font-size: 1.5em;
+    }
+
+    #screen{
+        width: 13%;
+    }
+}
+
+
+@media only screen and (width:1024px){
+.target-card p {
+    font-size: 0.5em;
+}
+
+body {
+        margin: 0%;
+        width: 100%;
+        height: 100vh;
+    }
+    h2{
+        font-size: 3em;
+    }
+
+    .target-card {
+        background-color: #0f5736;;
+        width: 30%;
+       
+    }
+
+    .target {
+       flex-direction: row;
+       gap: 1cm;
+       align-items: center;
+       
+    }
+    .screens{
+       display: flex;
+       gap: 10%;
+       width: 90%;
+       margin-left: 5%;
+     
+
+    }
+    .target-card h3 {
+        font-size: 1em;
+    }
+    #screen{
+        width: 13%;
     }
 
 }
 
+/* @media only screen and (width:390px){
+    .screens{
+        display: block;
+
+    }
+} */
 
 
     
