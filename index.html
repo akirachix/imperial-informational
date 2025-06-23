@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>iRecycle</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo">iRECYCLE</div>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#explore">HOW IT WORKS</a>
-            <a href="#aboutUs">ABOUT US</a>
-            <a href="#contactUs">CONTACT US</a>
-        </nav>
-    </header>
-    <img src="images/logo.png" id="logoo">
-    <section class="hero">
-        <div class="hero-text">
-            <h1>GO GREEN NOW</h1>
-            <p>Your Recycling Solution: Efficient and responsible solutions<br>
-                for waste management</p>
-            <button type="button" id="learn-button">Learn More</button>
-        </div>
-    </section>
-
+   <header>
+      <div class="logo">iRECYCLE</div>
+      <div class="hamburger">
+         <i class="fas fa-bars open-icon"></i>
+         <i class="fas fa-times close-icon"></i>
+      </div>
+      <nav>
+         <a href="#">HOME</a>
+         <a href="#explore">HOW IT WORKS</a>
+         <a href="#aboutUs">ABOUT US</a>
+         <a href="#contactUs">CONTACT US</a>
+      </nav>
+   </header>
+   <img src="images/logo.png" id="logoo">
+   <section class="hero">
+      <div class="hero-text">
+         <h1>GO GREEN NOW</h1>
+         <p>Your Recycling Solution: Efficient and responsible solutions<br>for waste management</p>
+         <button type="button" id="learn-button">Learn More</button>
+      </div>
+   </section>
+   <script>
+      const hamburger = document.querySelector('.hamburger');
+      const nav = document.querySelector('nav');
+      hamburger.addEventListener('click', () => {
+         nav.classList.toggle('show');
+         hamburger.classList.toggle('active');
+      });
+   </script>
 </body>
-
 </html>
+
+
+
+
+
+

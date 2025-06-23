@@ -1,299 +1,450 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-    font-family: 'poppins';
-    color: #fff;
+   font-family: 'poppins', sans-serif;
+   color: #fff;
+   overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url(fonts/Poppins-Regular.ttf);
+   font-family: 'poppins';
+   src: url(fonts/Poppins-Regular.ttf);
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #e0e0e0;
-    font-family: 'poppins';
-    font-size: 100%;
-
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   background-color: #e0e0e0;
+   font-family: 'poppins', sans-serif;
+   position: relative;
 }
 
 .logo {
-    font-size: 100%;
-    font-weight: bold;
-    color: #4CAF50;
-    margin-left: 1cm;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #4CAF50;
+   left: 0.1rem;
+   line-height: 1.2rem;
+}
 
+nav {
+   display: flex;
+   align-items: center;
 }
 
 nav a {
-    color: #4CAF50;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    position: sticky;
+   color: #4CAF50;
+   text-decoration: none;
+   margin: 0 1rem;
+   font-weight: bold;
+   font-size: 1rem;
+}
 
+.hamburger {
+   display: none;
+   font-size: 2rem; 
+   cursor: pointer;
+   color: #4CAF50; 
+   position: relative;
+   z-index: 20;
+}
+
+.hamburger .close-icon {
+   display: none;
+}
+
+.hamburger.active .open-icon {
+   display: none;
+}
+
+.hamburger.active .close-icon {
+   display: inline;
 }
 
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(3, 12, 11, 0.514)), url(images/homepage.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
-    font-family: 'poppins';
-    position: sticky;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(3, 12, 11, 0.514)), url(images/homepage.jpg);
+   background-size: cover;
+   background-position: center;
+   min-height: 85vh;
+   font-family: 'poppins', sans-serif;
 }
 
-.hero-text p {
-    font-size: 150%;
-    margin-left: 14.5cm;
-    margin-top: 0.5cm;
-    color: white;
-    text-align: center;
-    font-family: 'poppins';
-
+.hero-text {
+   text-align: center;
 }
 
 .hero-text h1 {
-    font-size: 48px;
-    margin-left: 18cm;
-    margin-top: -2cm;
-    color: #4CAF50;
-    font-family: 'poppins';
+   font-size: 3rem;
+   color: #4CAF50;
+   margin-bottom: 1rem;
 }
 
-#logoo {
-    width: 2.8%;
-    margin-top: -1.4cm;
-    position: absolute;
-
-}
-
-#about {
-    width: 75%;
+.hero-text p {
+   font-size: 1.2rem;
+   color: white;
+   margin-bottom: 1.5rem;
 }
 
 #learn-button {
-    margin-left: 21.3cm;
-    margin-top: 1cm;
-    padding: 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    width: 4cm;
-    border-radius: 5px;
-    font-size: 100%;
-    cursor: pointer;
-    font-family: 'poppins';
+   padding: 10px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 2rem;
+   width: 150px;
+   height: 50px;
+   min-width: 10rem;
+   cursor: pointer;
+   font-family: 'poppins', sans-serif;
+   transition: background-color 0.3s, color 0.3s;
 }
+
 
 #learn-button:hover {
-    background-color: orange;
-    color: black;
+   background-color: orange;
+   color: black;
 }
 
-@media screen and (max-width:480px) {
-    .logo {
-        margin-left: 0.5cm;
-    }
-
-
-    .hero-text {
-        margin-left: -13cm;
-    }
-
-
-    #logoo {
-        margin-top: -1.2cm;
-        width: 8%;
-    }
-
-
-    .hero {
-        background-image: url(images/homepage.jpg);
-        height: 85vh;
-        width: 100vw;
-    }
-
-
-    body {
-        margin: 0%;
-    }
-
-    nav a {
-        color: #4CAF50;
-        text-decoration: none;
-        margin: 5px;
-        font-weight: bold;
-
-
-    }
-
-    #learn-button {
-        margin-left: 16cm;
-        margin-top: 1cm;
-        padding: 15px;
-    }
-
-    .hero-text h1 {
-        font-size: 30px;
-        margin-left: 15.5cm;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-        font-size: 75%;
-    }
-}
-
-@media screen and (min-width:481px) and (max-width:600px) {
-    .logo {
-        margin-left: 0.6cm;
-    }
-
-
-    .hero-text {
-        margin-left: -13cm;
-    }
-
-
-    #logoo {
-        margin-top: -1.2cm;
-        width: 5%;
-    }
-
-
-    .hero {
-        background-image: url(images/homepage.jpg);
-        height: 85vh;
-        width: 100vw;
-    }
-
-
-    body {
-        margin: 0%;
-    }
-
-    #learn-button {
-        margin-left: 20cm;
-        margin-top: 1cm;
-        padding: 15px;
-    }
-
-
-    .hero-text h1 {
-        font-size: 48px;
-        margin-left: 17.5cm;
-    }
-
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        font-size: 80%;
-
-
-    }
-
-
+#logoo {
+   width: 2.5rem;
+   position: absolute;
+   top: 2.5rem;
+   left: 1rem;
+   transform: translateY(-50%);
 }
 
 
-@media only screen and (min-width:601px) and (max-width:768px) {
-    .logo {
-        margin-left: 0.6cm;
-    }
+@media screen and (max-width: 480px) {
+   header {
+      padding: 0.8rem 1rem;
+   }
 
+   .logo {
+      font-size: 1rem;
+      margin-left: 2.8rem;
+   }
 
-    .hero-text {
-        margin-left: -13cm;
-    }
+   .hamburger {
+      display: block;
+      font-size: 1.8rem; 
+      color: #4CAF50;
+      text-align: left;
+   }
 
+   nav {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh; 
+      background-color: #e0e0e0;
+      padding: 3rem 1rem;
+      border-radius: 0;
+      z-index: 10;
+      transform: translateX(100%); 
+      transition: transform 0.3s ease-in-out;
+      align-items: self-start;
+      justify-content: flex-start;
+   }
 
-    #logoo {
-        margin-top: -1.2cm;
-        width: 5%;
-    }
+   nav.show {
+      display: flex;
+      transform: translateX(0); 
+   }
 
+   nav a {
+      margin: 1.5rem 0; 
+      padding-right: 210px;
+      justify-content: flex-start;
+      color: #4CAF50; 
+   }
 
-    .hero {
-        background-image: url(images/homepage.jpg);
-        height: 85vh;
-        width: 100vw;
-    }
+   .hero {
+      min-height: 90vh;
+      padding: 1rem;
+   }
 
+   .hero-text h1 {
+      font-size: 1.5rem;
+   }
 
-    body {
-        margin: 0%;
-    }
+   .hero-text p {
+      font-size: 1rem;
+   }
 
-    #learn-button {
-        margin-left: 20cm;
-        margin-top: 1cm;
-        padding: 15px;
-    }
+   #learn-button {
+      padding: 10px;
+      width: 5%;
+      min-width: 10rem;
+      font-size: 1rem;
+   }
 
+   #logoo {
+      width: 2.5rem;
+      left: 1rem;
+      top: 2.3rem;
+      position: absolute;
+   }
+}
 
-    .hero-text h1 {
-        font-size: 48px;
-        margin-left: 17.5cm;
-    }
+@media screen and (min-width: 481px) and (max-width: 600px) {
+   header {
+      padding: 0.8rem 1.5rem;
+   }
 
+   .logo {
+      font-size: 1.1rem;
+      margin-left: 3rem;
+   }
 
+   .hamburger {
+      display: block;
+      font-size: 1.8rem;
+      color: #4CAF50;
+      left: 0;
+      margin: 0;
+   }
+
+   nav {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%; 
+      height: 100vh;
+      background-color: #e0e0e0;
+      padding: 3rem 1rem;
+      border-radius: 0;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      align-items: flex-start;
+     
+   }
+
+   nav.show {
+      display: flex;
+      transform: translateX(0);
+   }
+
+   nav a {
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+      color: #4CAF50;
+   }
+
+   .hero {
+      min-height: 90vh;
+      padding: 1.5rem;
+   }
+
+   .hero-text h1 {
+      font-size: 2rem;
+   }
+
+   .hero-text p {
+      font-size: 1.1rem;
+   }
+
+   #learn-button {
+      padding: 8px;
+      width: 5%;
+      min-width: 5.5rem;
+      font-size: 0.75rem;
+   }
+
+   #logoo {
+      width: 2.5rem;
+      left: 1.5rem;
+      top: 2.3rem;
+      position: absolute;
+   }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+   header {
+      padding: 1rem 2rem;
+   }
+
+   .logo {
+      font-size: 1.15rem;
+      margin-left: 2.2rem;
+   }
+
+   .hamburger {
+      display: block;
+      font-size: 1.8rem;
+      color: #4CAF50;
+   }
+
+   nav {
+      display: none;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%; 
+      height: 100vh;
+      background-color: #e0e0e0;
+      padding: 3rem 1rem;
+      border-radius: 0;
+      z-index: 10;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      align-items: flex-start;
+      justify-content: flex-start;
+   }
+
+   nav.show {
+      display: flex;
+      transform: translateX(0);
+   }
+
+   nav a {
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+      color: #4CAF50;
+   }
+
+   .hero {
+      min-height: 92vh;
+      padding: 2rem;
+   }
+
+   .hero-text h1 {
+      font-size: 2.5rem;
+   }
+
+   .hero-text p {
+      font-size: 1.2rem;
+   }
+
+   #learn-button {
+      padding: 10px;
+      width: 5%;
+      min-width: 5.5rem;
+      font-size: 0.8rem;
+   }
+   #logoo {
+      width: 2.5rem;
+      left: 1.5rem;
+      top: 2.5rem;
+      position: absolute;
+   }
 }
 
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .logo {
-        margin-left: 0.6cm;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+   header {
+      padding: 1rem 2rem;
+   }
+
+   .logo {
+      font-size: 1.2rem;
+      margin-left: 2rem;
+   }
+
+   nav {
+      display: flex;
+   }
+
+   nav a {
+      font-size: 0.9rem;
+      margin: 0 0.8rem;
+      color: #4CAF50; 
+   }
+
+   .hamburger {
+      display: none;
+   }
+
+   .hero {
+      min-height: 90vh;
+      padding: 2rem;
+   }
+
+   .hero-text h1 {
+      font-size: 2.8rem;
+   }
+
+   .hero-text p {
+      font-size: 1.3rem;
+   }
+
+   #learn-button {
+      padding: 15px;
+      width: 5%;
+      min-width: 12rem;
+      font-size: 1rem;
+   }
+
+   #logoo {
+      width: 2rem;
+      left: 1.5rem;
+      top: 2rem;
+      position: absolute;
+   }
+}
 
 
-    .hero-text {
-        margin-left: -13cm;
-    }
+@media screen and (min-width: 1025px) {
+   header {
+      padding: 1.5rem 3rem;
+   }
 
+   .logo {
+      font-size: 1.4rem;
+      margin-left: 4rem;
+   }
 
-    #logoo {
-        margin-top: -1.2cm;
-        width: 5%;
-    }
+   nav a {
+      font-size: 1.1rem;
+      margin: 0 1.2rem;
+      color: #4CAF50; 
+   }
 
+   .hamburger {
+      display: none;
+   }
 
-    .hero {
-        background-image: url(images/homepage.jpg);
-        height: 85vh;
-        width: 100vw;
-    }
+   .hero {
+      min-height: 85vh;
+      padding: 3rem;
+   }
 
+   .hero-text h1 {
+      font-size: 3.5rem;
+   }
 
-    body {
-        margin: 0%;
-    }
+   .hero-text p {
+      font-size: 1.5rem;
+   }
 
-    #learn-button {
-        margin-left: 20cm;
-        margin-top: 1cm;
-        padding: 15px;
-    }
+   #learn-button {
+      padding: 10px;
+      width: 5%;
+      min-width: 6rem;
+      font-size: 0.8rem;
+   }
 
-    .hero-text h1 {
-        font-size: 48px;
-        margin-left: 17.5cm;
-    }
+   #logoo {
+      width: 3rem;
+      left: 1.5rem;
+
+   }
 }
