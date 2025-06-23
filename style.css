@@ -3,14 +3,19 @@ body {
     color: #333;
 }
 
-
+#icons{
+    font-size: 30px;
+    color: #fff;
+}
 
 .services {
+    margin: 0;
     display: flex;
     justify-content: space-around;
     padding: 50px;
     background-color: #e0e0e0;
     font-family: 'poppins';
+    font-size: 16px;
 
 }
 
@@ -19,8 +24,11 @@ body {
     padding: 20px;
     background-color: #4CAF50;
     border-radius: 10px;
-    width: 30%;
+    width: 40%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.8);
+}
+.service-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .service-card:hover {
@@ -43,7 +51,8 @@ body {
     font-size: 19px;
     margin-bottom: 10px;
     color: white;
-    color: #333;
+    color: #ffff;
+    /* font-size: 16px; */
 }
 
 .service-link {
@@ -80,7 +89,7 @@ h2 {
 }
 
 .experience p {
-    font-size: 120%;
+    font-size: 20px;
     margin: 30px;
     font-family: 'poppins';
     text-align: center;
@@ -110,8 +119,8 @@ h2 {
 } */
 .process{
     display: flex;
-    gap: 150px;
-    justify-content: center;
+    /* gap: 70px; */
+    justify-content: space-evenly;
     img{
         max-width: 100px;
         max-height: 100px;
@@ -127,6 +136,7 @@ h2 {
 
 
 .services {
+  
     flex-direction: column;
     /* justify-content: space-around; */
     /* padding: 10px; */
@@ -137,6 +147,7 @@ h2 {
 }
 
 .service-card {
+    margin-left: -8px;
     text-align: center;
     padding: 20px;
     background-color: #4CAF50;
@@ -159,94 +170,7 @@ h2 {
     font-size: 15px;
     margin-bottom: 8px;
     color: white;
-    color: #333;
-}
-
-.service-link {
-    color: #f4a261;
-    text-decoration: none;
-}
-
-
-h2 {
-    text-align: center;
-    margin-top: 40px;
-    font-family: 'poppins';
-    font-size: 250%;
-    color: orange;
-}
-
-.experience {
-    /* max-width: 50%; */
-    justify-content: center;
-    align-items: center;
-}
-
-.experience h2 {
-    font-size: 28px;
-    color: #4CAF50;
-    text-align: center;
-}
-
-.experience p {
-    font-size: 120%;
-    margin: 30px;
-    font-family: 'poppins';
-    text-align: center;
-}
-.process{
-    flex-wrap: wrap;
-    gap: 70px;
-    justify-content: center;
-    img{
-        max-width: 100px;
-        max-height: 100px;
-    }
-}
-
-}
-@media (min-width: 376px) and (max-width: 700px){
-     body {
-    font-family: 'poppins';
-    color: #333;
-}
-
-
-
-.services {
-    flex-direction: column;
-    /* justify-content: space-around; */
-    /* padding: 10px; */
-    background-color: #e0e0e0;
-    font-family: 'poppins';
-    gap: 30px;
-
-}
-
-.service-card {
-    text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
-    border-radius: 10px;
-    width: 90%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.8);
-}
-
-.service-card:hover {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
-}
-.service-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: white;
-    font-weight: bold;
-}
-
-.service-card p {
-    font-size: 15px;
-    margin-bottom: 8px;
-    color: white;
-    color: #333;
+    color: #FFFF;
 }
 
 .service-link {
@@ -284,13 +208,193 @@ h2 {
 .process{
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: space-evenly;
+    img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+}
+@media (min-width: 376px) and (max-width: 500px){
+     body {
+    font-family: 'poppins';
+    color: #333;
+}
+
+
+
+.services {
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-left: 10px;
+    background-color: #e0e0e0;
+    font-family: 'poppins';
+    gap: 30px;
+    margin: 0;
+
+}
+
+.service-card {
+    text-align: center;
+    margin-left: -5px;
+    /* padding: 20px; */
+    background-color: #4CAF50;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.8);
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: white;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.service-link {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'poppins';
+    font-size: 250%;
+    color: orange;
+}
+
+.experience {
+    /* max-width: 50%; */
     justify-content: center;
+    align-items: center;
+}
+
+.experience h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.experience p {
+    font-size: 120%;
+    margin: 30px;
+    font-family: 'poppins';
+    text-align: center;
+}
+.process{
+    flex-wrap: wrap;
+    gap: 40px;
+    /* justify-content: space-evenly; */
     img{
         max-width: 100px;
         max-height: 100px;
     }
 }
 }
+
+@media (min-width: 501px) and (max-width: 699px){
+     body {
+    font-family: 'poppins';
+    color: #333;
+}
+
+
+
+.services {
+    flex-direction: column;
+    /* justify-content: space-around; */
+    
+    background-color: #e0e0e0;
+    font-family: 'poppins';
+    gap: 30px;
+    margin: 0;
+
+}
+
+.service-card {
+    margin: -2px;
+    text-align: center;
+    /* padding: 20px; */
+    background-color: #4CAF50;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.8);
+}
+
+.service-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: white;
+    color: #FFF;
+}
+
+.service-link {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'poppins';
+    font-size: 250%;
+    color: orange;
+}
+
+.experience {
+    /* max-width: 50%; */
+    justify-content: center;
+    align-items: center;
+}
+
+.experience h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    text-align: center;
+}
+
+.experience p {
+    font-size: 120%;
+    margin: 30px;
+    font-family: 'poppins';
+    text-align: center;
+}
+.process{
+    display: flex;
+    gap: 5px;
+    /* justify-content: space-evenly; */
+    img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+}
+
 @media (min-width: 701px) and (max-width: 1200px){
      body {
     font-family: 'poppins';
@@ -300,22 +404,28 @@ h2 {
 
 
 .services {
-    flex-direction: column;
+    display: flex;
     /* justify-content: space-around; */
     /* padding: 10px; */
     background-color: #e0e0e0;
     font-family: 'poppins';
-    gap: 30px;
+    gap: 40px;
+    font-size: 16px;
 
 }
 
 .service-card {
     text-align: center;
     padding: 20px;
+    /* font-size: 16px; */
     background-color: #4CAF50;
     border-radius: 10px;
     width: 90%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 1.5px 4px rgba(0, 0, 0, 0.8);
+    p{
+        color: white;
+        font-size: 16px;
+    }
 }
 
 .service-card:hover {
@@ -332,7 +442,7 @@ h2 {
     font-size: 15px;
     margin-bottom: 8px;
     color: white;
-    color: #333;
+    color: #FFF;
 }
 
 .service-link {
@@ -370,7 +480,7 @@ h2 {
 .process{
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: center;
+    justify-content: space-evenly;
     img{
         max-width: 100px;
         max-height: 100px;
