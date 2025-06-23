@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>iRecycle</title>
+   <title>Imperial Informational Website</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
+   <!-- Landing Page -->
    <header>
       <div class="logo">iRECYCLE</div>
       <div class="hamburger">
@@ -29,6 +33,92 @@
          <button type="button" id="learn-button">Learn More</button>
       </div>
    </section>
+
+   <!-- Contact Us -->
+   <h2 id="contact_title">CONTACT US</h2>
+   <div class="contact_info" id="contactUs">
+      <div>
+         <img src="images/contact.jpg" id="contactimg">
+      </div>
+
+      <div id="contact">
+
+         <form id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+            <label for="email ">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+         </form>
+      </div>
+   </div>
+
+   <!--  Footer -->
+   <footer>
+      <div class="footer-container">
+
+         <div class="footer-section footer-mission-details">
+            <div class="footer-logo-details">
+               <img src="images/logo.png" id="footer-logo" alt="iRECYCLE Logo">
+               <span><strong>iRECYCLE</strong></span>
+            </div>
+            <p class="footer_section">
+               We are the best! Dedicated to creating sustainable environment.
+               We transform textile waste into useful products that captivate and inspire.
+            </p>
+         </div>
+
+         <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="links">
+               <li><a href="#">Home</a></li>
+               <li><a href="#explore">How it works</a></li>
+               <li><a href="#aboutUs">About us</a></li>
+               <li><a href="#contactUs">Contact us</a></li>
+            </ul>
+         </div>
+
+
+         <div class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+               <li><a href="#">Textile Recycling</a></li>
+               <li><a href="#">Product Transformation</a></li>
+               <li><a href="#">Sustainability Consulting</a></li>
+               <li><a href="#">Workshops & Training</a></li>
+            </ul>
+         </div>
+
+
+         <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+               <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:6238641240">0718020312</a></li>
+               <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:97458470008">072045368</a></li>
+               <li><i class="fa-solid fa-phone-volume"></i> <a href="tel:9744723238">0719856478</a></li>
+               <li><i class="fa-solid fa-envelope-open-text"></i> <a
+                     href="mailto:irecycle89@gmail.com">irecycle89@gmail.com</a></li>
+            </ul>
+            <div class="footer-socials">
+               <a href="https://www.facebook.com/AfricaCollectTextiles/?_rdc=2&_rdr#" aria-label="Facebook"><i
+                     class="fa-brands fa-facebook"></i></a>
+               <a href="https://www.instagram.com/africa.collect.textiles/" aria-label="Instagram"><i
+                     class="fa-brands fa-instagram"></i></a>
+               <a href="https://x.com/AfricaCollect" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+               <a href="https://www.linkedin.com/company/africa-collect-textiles/" aria-label="LinkedIn"><i
+                     class="fa-brands fa-linkedin"></i></a>
+               <a href="mailto:info@irecycleapp.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <p id="copyright">Copyright 2025, All Rights Reserved by iRECYCLE.</p>
+   </footer>
    <script>
       const hamburger = document.querySelector('.hamburger');
       const nav = document.querySelector('nav');
@@ -37,11 +127,7 @@
          hamburger.classList.toggle('active');
       });
    </script>
+
 </body>
+
 </html>
-
-
-
-
-
-
